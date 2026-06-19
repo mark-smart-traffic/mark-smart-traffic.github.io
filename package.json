@@ -1,0 +1,13 @@
+{
+  "name": "mark-smart-traffic-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "encrypt": "node scripts/encrypt.js",
+    "test": "node --test tests/encrypt.test.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "staticrypt": "^2.3.3"
+  }
+}
