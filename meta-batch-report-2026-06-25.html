@@ -16,10 +16,24 @@
       font-weight: 700;
       margin: 0 0 0.25rem;
     }
+    p.generated {
+      color: #6b7280;
+      font-size: 0.8125rem;
+      margin: 0 0 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: #111827;
+      margin: 0 0 0.125rem;
+    }
     p.period {
       color: #6b7280;
       font-size: 0.8125rem;
-      margin: 0 0 1.5rem;
+      margin: 0 0 0.625rem;
     }
     table {
       border-collapse: collapse;
@@ -70,72 +84,115 @@
 </head>
 <body>
   <h1>Smart Traffic — 7-Day Meta Ads Report</h1>
-  <p class="period">Period: 18 Jun – 24 Jun &nbsp;·&nbsp; Generated: 25 Jun 2026</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Client</th>
-        <th>18 Jun</th>
-        <th>19 Jun</th>
-        <th>20 Jun</th>
-        <th>21 Jun</th>
-        <th>22 Jun</th>
-        <th>23 Jun</th>
-        <th>24 Jun</th>
-        <th>7-Day Spend</th>
-        <th>CPL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Body Shape Warringah Mall</td>
-        <td>1</td>
-        <td>3</td>
-        <td>2</td>
-        <td>1</td>
-        <td>3</td>
-        <td>0</td>
-        <td>4</td>
-        <td>A$299.55</td>
-        <td>A$21.40</td>
-      </tr>
-      <tr>
-        <td>LTYB Bundoora</td>
-        <td>0</td>
-        <td>2</td>
-        <td>0</td>
-        <td>1</td>
-        <td>3</td>
-        <td>3</td>
-        <td>3</td>
-        <td>A$224.06</td>
-        <td>A$18.67</td>
-      </tr>
-      <tr class="error">
-        <td>F45 Training Manchester NQ [Meta API error: account not enabled for Ads MCP]</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—</td>
-      </tr>
-      <tr>
-        <td>Bodystreet Sutton Coldfield ⚠️</td>
-        <td>1</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>2</td>
-        <td>4</td>
-        <td>0</td>
-        <td>£70.56</td>
-        <td>£6.41</td>
-      </tr>
-    </tbody>
-  </table>
+  <p class="generated">Generated: 25 Jun 2026</p>
+
+  <section>
+    <h2>Australia Clients</h2>
+    <p class="period">Period: 18 Jun – 24 Jun &nbsp;·&nbsp; Timezone: Australia/Sydney (AEST UTC+10) ⚠️ inferred from AUD</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th>18 Jun</th>
+          <th>19 Jun</th>
+          <th>20 Jun</th>
+          <th>21 Jun</th>
+          <th>22 Jun</th>
+          <th>23 Jun</th>
+          <th>24 Jun</th>
+          <th>7-Day Spend</th>
+          <th>CPL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Body Shape Warringah Mall</td>
+          <td>1</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>3</td>
+          <td>0</td>
+          <td>4</td>
+          <td>A$299.55</td>
+          <td>A$21.40</td>
+        </tr>
+        <tr>
+          <td>LTYB Bundoora</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>A$224.06</td>
+          <td>A$18.67</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>United Kingdom Clients</h2>
+    <p class="period">Period: 18 Jun – 24 Jun &nbsp;·&nbsp; Timezone: Europe/London (BST UTC+1) ⚠️ inferred from GBP</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th>18 Jun</th>
+          <th>19 Jun</th>
+          <th>20 Jun</th>
+          <th>21 Jun</th>
+          <th>22 Jun</th>
+          <th>23 Jun</th>
+          <th>24 Jun</th>
+          <th>7-Day Spend</th>
+          <th>CPL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bodystreet Sutton Coldfield</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0</td>
+          <td>£70.56</td>
+          <td>£6.41</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Errors</h2>
+    <p class="period">Accounts that could not be retrieved</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th colspan="9">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="error">
+          <td>F45 Training Manchester NQ [Meta API error: account not enabled for Ads MCP]</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 </body>
 </html>
