@@ -89,6 +89,9 @@
     tbody tr.error td {
       color: #9ca3af;
     }
+    td.leads-zero { background: #fee2e2; color: #991b1b; }
+    td.leads-one  { background: #fef3c7; color: #92400e; }
+    td.leads-good { background: #dcfce7; color: #166534; }
   </style>
 </head>
 <body>
@@ -97,7 +100,7 @@
 
   <section>
     <h2>Australia Clients</h2>
-    <p class="period">Period: 18 Jun – 24 Jun &nbsp;·&nbsp; Timezone: Australia/Sydney (AEST UTC+10) ⚠️ inferred from AUD</p>
+    <p class="period">Period: 18 Jun – 24 Jun &nbsp;·&nbsp; AUD account</p>
     <table>
       <thead>
         <tr>
@@ -117,13 +120,13 @@
       <tbody>
         <tr>
           <td>Body Shape Warringah Mall</td>
-          <td>1</td>
-          <td>3</td>
-          <td>2</td>
-          <td>1</td>
-          <td>3</td>
-          <td>0</td>
-          <td>4</td>
+          <td class="leads-one">1</td>
+          <td class="leads-good">3</td>
+          <td class="leads-good">2</td>
+          <td class="leads-one">1</td>
+          <td class="leads-good">3</td>
+          <td class="leads-zero">0</td>
+          <td class="leads-good">4</td>
           <td>A$299.55</td>
           <td>A$21.40</td>
           <td></td>
@@ -134,7 +137,7 @@
 
   <section>
     <h2>United States Clients</h2>
-    <p class="period">Period: 17 Jun – 23 Jun &nbsp;·&nbsp; Timezone: America/Los_Angeles (PDT UTC-7) ⚠️ inferred from USD</p>
+    <p class="period">Period: 17 Jun – 23 Jun &nbsp;·&nbsp; USD account</p>
     <table>
       <thead>
         <tr>
@@ -153,14 +156,14 @@
       </thead>
       <tbody>
         <tr>
-          <td>F45 Training Bressi Ranch ⚠️</td>
-          <td>1</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>1</td>
-          <td>2</td>
-          <td>0</td>
+          <td>F45 Training Bressi Ranch</td>
+          <td class="leads-one">1</td>
+          <td class="leads-zero">0</td>
+          <td class="leads-zero">0</td>
+          <td class="leads-zero">0</td>
+          <td class="leads-one">1</td>
+          <td class="leads-good">2</td>
+          <td class="leads-zero">0</td>
           <td>$178.24</td>
           <td>$44.56</td>
           <td class="action-flag">✕</td>
@@ -196,5 +199,6 @@
       </tbody>
     </table>
   </section>
+
 </body>
 </html>
