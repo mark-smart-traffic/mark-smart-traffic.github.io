@@ -37,7 +37,7 @@
     }
     table {
       border-collapse: collapse;
-      width: 100%;
+      width: auto;
       font-size: 0.8125rem;
     }
     thead th {
@@ -50,7 +50,10 @@
     }
     thead th:first-child {
       text-align: left;
-      min-width: 180px;
+    }
+    thead th:last-child {
+      white-space: normal;
+      min-width: 75px;
     }
     tbody td {
       padding: 0.5rem 0.75rem;
