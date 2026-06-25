@@ -68,6 +68,15 @@
       font-weight: 600;
       color: #1d4ed8;
     }
+    tbody td.action-flag {
+      font-weight: 700;
+      color: #dc2626;
+      font-size: 1rem;
+    }
+    tbody td.action-warn {
+      color: #d97706;
+      font-size: 0.75rem;
+    }
     tbody tr:nth-child(even) {
       background: #f9fafb;
     }
@@ -102,6 +111,7 @@
           <th>24 Jun</th>
           <th>7-Day Spend</th>
           <th>CPL</th>
+          <th>Action Plan Required</th>
         </tr>
       </thead>
       <tbody>
@@ -116,6 +126,7 @@
           <td>4</td>
           <td>A$299.55</td>
           <td>A$21.40</td>
+          <td></td>
         </tr>
       </tbody>
     </table>
@@ -137,6 +148,7 @@
           <th>23 Jun</th>
           <th>7-Day Spend</th>
           <th>CPL</th>
+          <th>Action Plan Required</th>
         </tr>
       </thead>
       <tbody>
@@ -151,6 +163,7 @@
           <td>0</td>
           <td>$178.24</td>
           <td>$44.56</td>
+          <td></td>
         </tr>
       </tbody>
     </table>
@@ -163,12 +176,13 @@
       <thead>
         <tr>
           <th>Client</th>
-          <th colspan="9">Status</th>
+          <th colspan="10">Status</th>
         </tr>
       </thead>
       <tbody>
         <tr class="error">
           <td>F45 Training Manchester NQ [Meta API error: account not enabled for Ads MCP]</td>
+          <td>—</td>
           <td>—</td>
           <td>—</td>
           <td>—</td>
